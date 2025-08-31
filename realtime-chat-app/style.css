@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/original.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.chat-container {
+  align-self: center;
+  max-width: 800px;
+  height: 90vh;
+  background-color: #efefef;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-shadow: 
+    0 4px 6px rgba(0,0,0,0.1),
+    0 10px 20px rgba(0,0,0,0.15),
+    0 20px 40px rgba(0,0,0,0.2);
+}
+
+
+.logo {
+  color: #424242;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.messageArea {
+    border: 2px solid rgba(86, 86, 86, 0.495);
+  flex: 1;
+  border-radius: 8px;
+  padding: 10px;
+  overflow-y: auto;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png") repeat;
+  background-color: #fdecc262;
+}
+
+.msg-bubble {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  position: relative;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.sent {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #075e54;
+  border-bottom-right-radius: 4px;
+  text-align: left;
+}
+
+.received {
+  font-size: 15px;
+  font-weight: 600;  
+  background-color: #ffffff;
+  border-bottom-left-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.time {
+  font-size: 11px;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: 4px;
+  text-align: right;
+  display: block;
+}
+
+.chat-input {
+  
+  margin-top: auto;
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-input input {
+  border: none;
+  border-radius: 30px;
+  box-shadow: none !important;
+}
+
+.chat-input button {
+  border-radius: 50%;
+  padding: 10px 14px;
+  margin-left: 6px;
+}
